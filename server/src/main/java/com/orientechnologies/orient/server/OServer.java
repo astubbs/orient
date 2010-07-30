@@ -98,8 +98,6 @@ public class OServer {
 
 		loadConfiguration();
 
-		OLogManager.instance().setLevel(configuration.getProperty("log.level"));
-
 		Orient.instance();
 		Orient.instance().removeShutdownHook();
 
@@ -166,7 +164,7 @@ public class OServer {
 
 	/**
 	 * Authenticate a server user.
-	 * 
+	 *
 	 * @param iUserName
 	 *          Username to authenticate
 	 * @param iPassword
